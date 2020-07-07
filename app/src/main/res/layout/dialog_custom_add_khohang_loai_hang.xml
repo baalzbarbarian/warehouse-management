@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/dalat"
+            android:text="Thêm Loại Hàng Trong Kho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    //Form Here
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:hint="Mã loại hàng"
+            android:layout_marginTop="@dimen/dp5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialog_custom_add_khohang_maloaisp"
+                android:textColorHint="#FF0000"
+                android:fontFamily="@font/dalat"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:hint="Tên loại hàng"
+            android:layout_marginTop="@dimen/dp5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialog_custom_add_khohang_tenloaisp"
+                android:textColorHint="#FF0000"
+                android:fontFamily="@font/dalat"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:paddingLeft="@dimen/dp5"
+            android:paddingRight="@dimen/dp5"
+            android:hint="Vị Trí"
+            android:layout_marginTop="@dimen/dp5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dialog_custom_add_khohang_vitri"
+                android:textColorHint="#FF0000"
+                android:fontFamily="@font/dalat"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:background="@color/white"
+        android:id="@+id/linearLayout_edit_ncc_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_custom_add_khohang_btncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_edit_employee_custom"
+            android:drawableLeft="@drawable/ic_close"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/dalat"
+            android:text="Hủy"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/dialog_custom_add_khohang_btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_edit_employee_custom"
+            android:drawableLeft="@drawable/ic_change"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/dalat"
+            android:text="Lưu"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:src="@drawable/ic_dialog_custom_edit_employee"-->
+    <!--        android:padding="@dimen/dp10"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_alignParentTop="true"/>-->
+
+</RelativeLayout>

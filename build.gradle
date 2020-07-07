@@ -1,0 +1,64 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+//
+//task convertDimens() {
+//
+//    def xmlFile720 = "${project.rootDir}/app/src/main/res/values/dimens.xml"
+//    def xmlFile1280 = "${project.rootDir}/app/src/main/res/values-land/dimens.xml"
+//
+//    def xmlOriginal = new XmlParser().parse(xmlFile720)
+//
+//    def xml1280 = xmlOriginal.clone()
+//
+//    xml1280.dimen.each { dimen ->
+//        def value = dimen.text();
+//        if (value.contains("sp")) {
+//            def newValue = value.replace("sp", "").toFloat()
+//            newValue = round((480 / 360 * newValue).toFloat(), 2);
+//            dimen.value = newValue + "sp"
+//        } else if (value.contains("px")) {
+//            def newValue = value.replace("px", "").toFloat()
+//            newValue = round((480 / 360 * newValue).toFloat(), 2);
+//            dimen.value = newValue + "px"
+//        } else {
+//            def newValue = value.replace("dp", "").toFloat()
+//            newValue = round((480 / 360 * newValue).toFloat(), 2);
+//            dimen.value = newValue + "dp"
+//        }
+//    }
+//
+//    new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile1280))).print(xml1280)
+//}
+//
+// static float round(float d, int decimalPlace) {
+//    BigDecimal bd = new BigDecimal(Float.toString(d));
+//    bd = bd.setScale(decimalPlace, BigDecimal.ROUND_HALF_UP);
+//    return bd.floatValue();
+//}
+//
+//clean.dependsOn convertDimens

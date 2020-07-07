@@ -1,0 +1,23 @@
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_setting_tkdtngay"
+        android:title="Thống kê trong tháng">
+
+    </item>
+
+    <item
+        android:id="@+id/action_settings_tkdtthangtrongnam"
+        android:title="Biểu đồ doanh thu các tháng">
+    </item>
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/action_settings"-->
+<!--        android:title="5 SP tiêu thụ nhiều nhất">-->
+<!--    </item>-->
+
+</menu>

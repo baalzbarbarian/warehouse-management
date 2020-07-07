@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            app:subtitleTextColor="@color/white"
+            app:titleTextColor="@color/white"
+            android:id="@+id/toolbar_add_ncc"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingEnd="16dp"
+            android:paddingStart="6dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        //Form Here
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/dialog_custom_product_ncc_spinner_tenncc"
+                style="@style/spinner_style"
+                android:background="@drawable/gradient_spinner"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:hint="Mã loại hàng"
+                android:layout_marginTop="@dimen/dp5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:enabled="false"
+                    android:id="@+id/dialog_custom_product_ncc_spinner_maloaisp"
+                    android:textColorHint="#FF0000"
+                    android:fontFamily="@font/dalat"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:paddingLeft="@dimen/dp5"
+                android:paddingRight="@dimen/dp5"
+                android:hint="Mã hàng"
+                android:layout_marginTop="@dimen/dp5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialog_custom_product_ncc_masp"
+                    android:textColorHint="#FF0000"
+                    android:fontFamily="@font/dalat"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:paddingRight="@dimen/dp5"
+
+                        android:paddingLeft="@dimen/dp5"
+                        android:hint="Tên hàng"
+                        android:layout_marginTop="@dimen/dp5"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dialog_custom_product_ncc_tensp"
+
+                            android:textColorHint="#FF0000"
+                            android:fontFamily="@font/dalat"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:paddingRight="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:hint="Giá hàng"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dialog_custom_product_ncc_giasp"
+                            android:inputType="number"
+                            android:textColorHint="#FF0000"
+                            android:fontFamily="@font/dalat"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/linearLayout_edit_ncc_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dialog_custom_product_ncc_imgViewLogoSpNcc"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_image" />
+
+            <!--            <Button-->
+<!--                android:id="@+id/dialog_custom_product_ncc_btncancel"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginRight="2.5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_edit_employee_custom"-->
+<!--                android:drawableLeft="@drawable/ic_close"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:fontFamily="@font/dalat"-->
+<!--                android:text="Hủy"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/dialog_custom_product_ncc_btnsave"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginLeft="2.5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_edit_employee_custom"-->
+<!--                android:drawableLeft="@drawable/ic_change"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:fontFamily="@font/dalat"-->
+<!--                android:text="Thêm"-->
+<!--                android:textColor="@color/white" />-->
+
+        </LinearLayout>
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="100dp"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:src="@drawable/ic_dialog_custom_edit_employee"-->
+        <!--        android:padding="@dimen/dp10"-->
+        <!--        android:layout_centerHorizontal="true"-->
+        <!--        android:layout_alignParentTop="true"/>-->
+
+    </RelativeLayout>
+
+</FrameLayout>

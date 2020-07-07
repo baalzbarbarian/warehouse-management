@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/dialog_custom_change_employee_username"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_account_box"
+                android:drawablePadding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:hint="@string/tai_khoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:textColor="@color/colorPrimary"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_password_box"
+                android:inputType="textPassword"
+                android:id="@+id/dialog_custom_change_employee_oldPass"
+                android:textSize="14sp"
+                android:hint="Mật khẩu cũ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_password_box"
+                android:inputType="textPassword"
+                android:id="@+id/dialog_custom_change_employee_newPass"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:hint="Mật khẩu mới"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:drawableLeft="@drawable/ic_fullname_box"
+                android:drawablePadding="5dp"
+                android:id="@+id/dialog_custom_change_employee_fullname"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:hint="Họ tên:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:drawableLeft="@drawable/ic_contact_phone_box"
+                android:drawablePadding="@dimen/dp5"
+                android:id="@+id/dialog_custom_change_employee_phone"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:hint="Số điện thoại:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:drawableLeft="@drawable/ic_gps_box"
+                android:drawablePadding="@dimen/dp5"
+                android:id="@+id/dialog_custom_change_employee_address"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:hint="Địa chỉ:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/dialog_custom_change_employee_btnCancel"
+                    android:drawableLeft="@drawable/ic_close"
+                    android:drawableTint="@color/white"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dalat"
+                    android:textColor="@color/white"
+                    android:text="Hủy"
+                    android:background="@drawable/button_edit_employee_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/dialog_custom_change_employee_btnChange"
+                    android:drawableLeft="@drawable/ic_change"
+                    android:drawableTint="@color/white"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/dalat"
+                    android:textColor="@color/white"
+                    android:text="Lưu"
+                    android:background="@drawable/button_edit_employee_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_dialog_custom_edit_employee"
+        android:padding="@dimen/dp10"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

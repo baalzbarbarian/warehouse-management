@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>-->
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_chart</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">"Lala"</item>
+    </style>
+
+    <style name="textview_MainActivity_for_large_layout">
+        <item name="android:fontFamily">@font/uvnbachdang</item>
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="title_nhanvien_registration_form">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/dalat</item>
+        <item name="android:textSize">@dimen/dp30</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+
+    <style name="title_login_activity">
+        <item name="android:fontFamily">@font/uvnbachdang</item>
+        <item name="android:textSize">@dimen/dp30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="username_style_login_activity">
+        <item name="android:ems">10</item>
+        <item name="android:drawableLeft">@drawable/ic_account_box</item>
+        <item name="android:drawablePadding">@dimen/dp5</item>
+        <item name="android:hint">@string/tai_khoan</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="password_style_login_activity">
+        <item name="android:ems">10</item>
+        <item name="android:drawableLeft">@drawable/ic_password_box</item>
+        <item name="android:drawablePadding">@dimen/dp5</item>
+        <item name="android:hint">@string/mat_khau</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="regis_adminitrator_pass1">
+        <item name="android:ems">10</item>
+        <item name="android:drawableLeft">@drawable/ic_password_box</item>
+        <item name="android:drawablePadding">@dimen/dp5</item>
+        <item name="android:hint">@string/mat_khau</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="regis_adminitrator_pass2">
+        <item name="android:ems">10</item>
+        <item name="android:drawableLeft">@drawable/ic_password_box</item>
+        <item name="android:drawablePadding">@dimen/dp5</item>
+        <item name="android:hint">@string/mat_khau_re</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="regis_adminitrator_code">
+        <item name="android:ems">10</item>
+        <item name="android:drawableLeft">@drawable/ic_password_box</item>
+        <item name="android:drawablePadding">@dimen/dp5</item>
+        <item name="android:hint">@string/admin_code</item>
+    </style>
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Slide">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/gradient_spinner</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:popupBackground">#DFFFFFFF</item>
+    </style>
+
+    <style name="txtWelcome">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/windsorb</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

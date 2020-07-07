@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_nhaphang_tatca"
+        android:icon="@drawable/ic_hoa_don"
+        android:title="@string/bottom_nav_tatca"/>
+
+    <item
+        android:id="@+id/navigation_nhaphang_ngay"
+        android:icon="@drawable/ic_hoa_don"
+        android:title="@string/bottom_nav_ngay" />
+
+    <item
+        android:id="@+id/navigation_nhaphang_tuan"
+        android:icon="@drawable/ic_hoa_don"
+        android:title="@string/bottom_nav_tuan" />
+
+    <item
+        android:id="@+id/navigation_nhaphang_thang"
+        android:icon="@drawable/ic_hoa_don"
+        android:title="@string/bottom_nav_thang" />
+
+</menu>

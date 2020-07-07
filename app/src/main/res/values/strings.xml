@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quản Lý Kho </string>
+    <string name="kho_hang">Kho Hàng</string>
+    <string name="xuat_hang">Xuất Hàng</string>
+    <string name="nhap_hang">Nhập Hàng</string>
+    <string name="thong_ke">Thống Kê</string>
+    <string name="doi_tac">Đối Tác</string>
+    <string name="title_ncc">Nhà Cung Cấp</string>
+    <string name="title_daily">Đại Lý</string>
+    <string name="title_nhanvien">Nhân Viên</string>
+    <string name="title_dangky_nhanvien">Đăng Ký Nhân Viên</string>
+
+    //Bottom Nav string.
+    <string name="bottom_nav_ngay">Hôm nay</string>
+    <string name="bottom_nav_tuan">Tuần</string>
+    <string name="bottom_nav_thang">Tháng</string>
+    <string name="bottom_nav_tatca">Tất cả</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tai_khoan">Tài Khoản</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="mat_khau_re">Nhập lại mật khẩu</string>
+    <string name="mat_khau_moi">Mật khẩu mới</string>
+    <string name="admin_code">Code Quản Trị</string>
+    <string name="edittext_dialog_box_ma_ncc">
+        <size>Mã NCC</size>
+    </string>
+
+</resources>
